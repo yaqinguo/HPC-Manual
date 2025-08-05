@@ -6,4 +6,6 @@ For copying data from / to the cluster, you can use the scp command from your lo
 For downloading data: scp user_name@curta.zedat.fu-berlin.de:your_data_location_in_curta directory_where_you_want_to_donwload_the_data
 For uploading data: scp location_of_the_data user_name@curta.zedat.fu-berlin.de:directory_where_you_want_to_upload_the_data
 
-Something important to do after your sequences arrive is to create a back-up (/scratch/ is not baked-up). You can do that by copying the data to /remote/trove/bcp/rilliglab/, in a directory with your user name.
+you will get this infromation from an email: There are two main file systems which you can use: a large scratch file system for temporary data and much smaller home file system for
+results and other non-temporary data.  A backup is made only of the file system /home.  Data on /scratch is not backed up. [So, i normally copy all data to home directory and also scratch]
+By default, the access permissions on our system are set such that members of the research group to which a user belongs are also able to read the data of the user.
